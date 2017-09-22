@@ -1,4 +1,4 @@
-<img align="right" src="/readmeAssets/qubino_control.jpg" width="150">
+<img align="right" src="/README-Assets/qubino_control.jpg" width="150">
 
 # php-devoloDHC-quibino-2flush
 
@@ -25,7 +25,7 @@ This script makes it easy giving you a single command to switch individual relay
 1. [Usage examples](#usage-example)<br />
 1. [Version history](#version-history)<br />
 
-<img align="right" src="/readmeAssets/questionmark.png" width="48">
+<img align="right" src="/README-Assets/questionmark.png" width="48">
 ### Requirements  [&#8657;](#php-devolodhc-quibino-2flush)
 - PHP v5+
 - [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) API
