@@ -79,7 +79,7 @@ In order order to let the CLI script work you need to provide 6 DHC scenes. The 
 For a better understanding see example below in table format which demonstrate the required settings. In this example the *Quibino Flush 2 relay* is named *Wohnzimmer* within DHC. All shown states are applied on this device.
   <br>
 
-Set | Scene Name | state relay #1 | state relay #2 |
+Set | Scene Name | state relay #1 | state relay #2
 --:-|---|:---:|:---:
 01 | Wohnzimmer #1 on | on | off
 02 | Wohnzimmer #1 off | off | on
