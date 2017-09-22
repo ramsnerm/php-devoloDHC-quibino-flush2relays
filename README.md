@@ -6,7 +6,7 @@
 
 This is a CLI php script to control the *Qubino Flush 2 Relay ZMNHBDx* using the php API [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) for *Devolo* Home Control (DHC) from [KiboOst](https://github.com/KiboOst).
 
-### What it no can do ...
+### What it can NOT do ...
 is to update the state of the relay within DHC when the *Qubino Flush 2 Relay* is triggered with a connected switch on I1/I2. This requires still an update of *Devolo* Home Control itself - Let's hope *Devolo* is making their software smarter
 
 ### Introduction
