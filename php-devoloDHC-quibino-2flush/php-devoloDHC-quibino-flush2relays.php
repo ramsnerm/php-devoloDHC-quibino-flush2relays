@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 	// NAME: 	php-devoloDHC-quibino-flush2relays.php
-	// VERSION:	v0.1 (2017-09-22)
+	// VERSION:	v1.0.0 (2017-09-22)
 	//
 	// Copyright (c) 2017 ramsnerm
   //
@@ -69,7 +69,7 @@
 		echo "    The CLI will call the DHC scene \"living room #1 on\"\n";
 		echo "\n";
 		echo "Version:\n";
-		echo "    v0.1 (2017-09-22)";
+		echo "    v1.0.0 (2017-09-22)";
 		echo "\n";
 		exit(-1);
 	}

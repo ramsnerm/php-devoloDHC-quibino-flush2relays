@@ -152,7 +152,7 @@ Example: ./php-devoloDHC-quibino-flush2relays.php "living room" 1 on
     The CLI will call the DHC scene "living room #1 on"
 
 Version:
-    v0.1 (2017-09-22)
+    v1.0.0 (2017-09-22)
 ```
 
 **Some examples** [&#8657;](#php-devolodhc-quibino-2flush)
