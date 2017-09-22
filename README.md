@@ -20,18 +20,20 @@ This script makes it easy giving you a single command to switch individual relay
 <br>
 
 ### Table of content
-1. [Requirements](#requirements)<br />
-1. [How-to](#how-to)<br />
-  1. [Change the script to your environment](#change-the-script-to-your-environment)<br />
-  1. [Prepare Devolo Home Control Scenes](#prepare-devolo-home-control-scenes)<br />
-1. [Usage examples](#usage-example)<br />
-1. [Version history](#version-history)<br />
+
+1. [Requirements](#requirements-)<br />
+1. [How-to](#how-to-)<br />
+  1. [Change the script to your environment](#change-the-script-to-your-environment-)<br />
+  1. [Prepare Devolo Home Control Scenes](#prepare-devolo-home-control-scenes-)<br />
+1. [Usage examples](#usage-examples-)<br />
+1. [Version history](#version-history-)<br />
+1. [Thanks and Credits](#thanks-)<br />
 
 <br>
 
 <img align="right" src="/README-Assets/questionmark.png" width="48">
 
-### Requirements  [&#8657;](#php-devolodhc-quibino-2flush)
+### Requirements [&#8657;](#php-devolodhc-quibino-2flush)
 
 - PHP v5+
 - [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) API
