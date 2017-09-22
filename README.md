@@ -80,7 +80,7 @@ For a better understanding see example below in table format which demonstrate t
   <br>
 
 Set | Scene Name | state relay #1 | state relay #2
---:-|---|:---:|:---:
+---|---|---|---
 01 | Wohnzimmer #1 on | on | off
 02 | Wohnzimmer #1 off | off | on
 03 | Wohnzimmer #2 on | on | off
