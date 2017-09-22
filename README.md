@@ -1,6 +1,7 @@
 <img align="right" src="/readmeAssets/qubino_control.jpg" width="150">
 
 # php-devoloDHC-quibino-2flush
+
 A php script to control the Qubino Flush 2 Relay using the php API for Devolo Home Control from @KiboOst
 
 ## What is it about?
@@ -47,7 +48,7 @@ $gateway 	= "<ENTER YOUR DHC GATEWAY ID>";
 $passkey 	= "<ENTER YOUR DHC PASSKEY>";
 ```
 
-[&#8657;](#php-devolodhc)
+[&#8657;](#php-devoloDHC-quibino-2flush)
 <img align="right" src="/readmeAssets/read.png" width="48">
 
 #### Prepare Devolo Home Control Scenes<br />
@@ -57,13 +58,13 @@ $passkey 	= "<ENTER YOUR DHC PASSKEY>";
 The CLI will call the DHC scene \"living room #1 on\"\n"
 ```
 
-[&#8657;](#php-devolodhc)
+[&#8657;](#php-devoloDHC-quibino-2flush)
 <img align="right" src="/readmeAssets/set.png" width="48">
 
 #### Usage examples<br />
 
 
-[&#8657;](#php-devolodhc)
+[&#8657;](#php-devoloDHC-quibino-2flush)
 <img align="right" src="/readmeAssets/changes.png" width="48">
 
 ## Version history
@@ -71,7 +72,7 @@ The CLI will call the DHC scene \"living room #1 on\"\n"
 #### v 0.1 (2017-09-22)
 - Created: Initial version.
 
-[&#8657;](#php-devolodhc)
+[&#8657;](#php-devoloDHC-quibino-2flush)
 <img align="right" src="/readmeAssets/mit.png" width="48">
 
 ## License
