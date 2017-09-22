@@ -88,8 +88,11 @@ For a better understanding see example below in table format which demonstrate t
 | 05 |Wohnzimmer all on  |       on       |       on       |
 | 06 |Wohnzimmer all off |       off      |       off      |
 
+
 <img align="right" src="/README-Assets/set.png" width="48">
+
 ### Usage examples [&#8657;](#php-devolodhc-quibino-2flush)
+
 Now let's have fun. After the Scenes are created and the script credentials are set correct we can play with it. See the following example calls. *Change devices names and paths by yours!*<br>
   <br>
 **How to start the script?** [&#8657;](#php-devolodhc-quibino-2flush)
@@ -163,6 +166,7 @@ $ ./php-devoloDHC-quibino-flush2relays.php Wohnzimmer 0 off
 ```
 
 <img align="right" src="/README-Assets/changes.png" width="48">
+
 ### Version history [&#8657;](#php-devolodhc-quibino-2flush)
 
 ###### v 0.1 (2017-09-22)
