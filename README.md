@@ -17,6 +17,8 @@ This script makes it easy giving you a single command to switch individual relay
 
 *This isn't an official Qubino or Devolo script* | **USE AT YOUR OWN RISK!<br />**
 
+<br>
+
 ### Table of content
 1. [Requirements](#requirements)<br />
 1. [How-to](#how-to)<br />
@@ -24,6 +26,8 @@ This script makes it easy giving you a single command to switch individual relay
   1. [Prepare Devolo Home Control Scenes](#prepare-devolo-home-control-scenes)<br />
 1. [Usage examples](#usage-example)<br />
 1. [Version history](#version-history)<br />
+
+<br>
 
 <img align="right" src="/README-Assets/questionmark.png" width="48">
 
@@ -33,6 +37,8 @@ This script makes it easy giving you a single command to switch individual relay
 - [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) API
 - Devolo Home Control (Hardware and Registration)
 - The script require internet access (it will authenticate against Devolo servers) via the php-devoloDHC API.
+
+<br>
 
 <img align="right" src="/README-Assets/read.png" width="48">
 
@@ -44,6 +50,8 @@ This script makes it easy giving you a single command to switch individual relay
 - Assure the script is executable by using the command ```chmod +x  php-devoloDHC-quibino-flush2relays.php```
 - [Change](#change-the-script-to-your-environment) the script and fill it with the needed credentials
 - Prepare *Devolo* Home Control and [create](#prepare-devolo-home-control-scenes) the required scenes
+
+<br>
 
 <img align="right" src="/README-Assets/requirements.png" width="48">
 
@@ -68,8 +76,10 @@ The script needs to be checked and updated with your credentials at two places
  $gateway  = "<ENTER YOUR DHC GATEWAY ID>";
  $passkey  = "<ENTER YOUR DHC PASSKEY>";
  ```
+<br>
 
 <img align="right" src="/README-Assets/requirements.png" width="48">
+
 ### Prepare Devolo Home Control Scenes [&#8657;](#php-devolodhc-quibino-2flush)
 
 In order order to let the CLI script work you need to provide 6 DHC scenes. The scene name must defined as followins within DHC:
@@ -77,7 +87,7 @@ In order order to let the CLI script work you need to provide 6 DHC scenes. The 
 > {device name} {white space} {relay contact number [all, 1, 2]} {white space} {[on, off]}
 
 For a better understanding see example below in table format which demonstrate the required settings. In this example the *Quibino Flush 2 relay* is named *Wohnzimmer* within DHC. All shown states are applied on this device.
-  <br>
+  <br><br>
 
 Set | Scene Name | state relay #1 | state relay #2
 ---|---|---|---
@@ -164,7 +174,7 @@ $ ./php-devoloDHC-quibino-flush2relays.php Wohnzimmer 2 off
 # relay contact 1 already switched off with previous command
 $ ./php-devoloDHC-quibino-flush2relays.php Wohnzimmer 0 off
 ```
-
+<br>
 <img align="right" src="/README-Assets/changes.png" width="48">
 
 ### Version history [&#8657;](#php-devolodhc-quibino-2flush)
@@ -198,7 +208,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+<br>
 
 ## Thanks [&#8657;](#php-devolodhc-quibino-2flush)
 
