@@ -26,13 +26,16 @@ This script makes it easy giving you a single command to switch individual relay
 1. [Version history](#version-history)<br />
 
 <img align="right" src="/README-Assets/questionmark.png" width="48">
+
 ### Requirements  [&#8657;](#php-devolodhc-quibino-2flush)
+
 - PHP v5+
 - [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) API
 - Devolo Home Control (Hardware and Registration)
 - The script require internet access (it will authenticate against Devolo servers) via the php-devoloDHC API.
 
 <img align="right" src="/README-Assets/read.png" width="48">
+
 ### How-to [&#8657;](#php-devolodhc-quibino-2flush)
 
 - Check if PHP is installed on your system (by using ```$ php -v``` on your command line)
@@ -43,6 +46,7 @@ This script makes it easy giving you a single command to switch individual relay
 - Prepare *Devolo* Home Control and [create](#prepare-devolo-home-control-scenes) the required scenes
 
 <img align="right" src="/README-Assets/requirements.png" width="48">
+
 ### Change the script to your environment [&#8657;](#php-devolodhc-quibino-2flush)
 
 The script needs to be checked and updated with your credentials at two places
@@ -55,7 +59,8 @@ The script needs to be checked and updated with your credentials at two places
  ```
  2. **Insert your *Devolo* Login and device credentials**<br>
  For details how to get uuid, passkey, ... follow the perfect guide from [KiboOst](https://github.com/KiboOst) mentioned in the [php-devoloDHC API](https://github.com/KiboOst/php-devoloDHC).
- ```bash
+
+  ```bash
  $login    = "<ENTER YOUR YOUR LOGIN E-MAIL ADDRESS>";
  $password = "<ENTER YOUR YOUR LOGIN PASSWORD>";
  $localIP  = "<ENTER YOUR YOUR DHC LOCAL IP ADDRESS>";
@@ -69,9 +74,10 @@ The script needs to be checked and updated with your credentials at two places
 
 In order order to let the CLI script work you need to provide 6 DHC scenes. The scene name must defined as followins within DHC:
 
-```<device name><white space><relay contact number [all, 1, 2]><white space><[on, off]>```
+> {device name} {white space} {relay contact number [all, 1, 2]} {white space} {[on, off]}
 
 For a better understanding see example below in table format which demonstrate the required settings. In this example the *Quibino Flush 2 relay* is named *Wohnzimmer* within DHC. All shown states are applied on this device.
+
 
 | #  | Scene Name        | state relay #1 | state relay #2 |
 |--:-|------------------ |:--------------:| :-------------:|
