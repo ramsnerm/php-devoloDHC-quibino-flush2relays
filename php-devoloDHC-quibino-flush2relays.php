@@ -4,29 +4,29 @@
 	// VERSION:	0.1
 	//
 	// Copyright (c) 2017 ramsnerm
-    //
+        //
 	// DESCRIPTION
 	//   A simple php script to operate the Qubino Flush 2 relays per contact and therfore to enable an implementation
  	//   in other scripts and/or home automation systems like ha-bridge (hue bridge emulator) or homebridge (homekit bridge).
 	//
 	// REQUIREMENTS
-	// - php API for Devolo Home Control (https://github.com/KiboOst/php-devoloDHC) 
-	// - PHP v5+
-	// - The script require internet access (it will authenticate against Devolo servers) if it fails local.
+	//   - php API for Devolo Home Control (https://github.com/KiboOst/php-devoloDHC) 
+	//   - PHP v5+
+	//   - The script require internet access (it will authenticate against Devolo servers) if it fails local.
 
-    // Include Devolo API php class from KiboOst
+        // Include Devolo API php class from KiboOst
 	// Configure the path to the location where you have stored the DHC php API
 	require($_SERVER['DOCUMENT_ROOT']."/root/home-automation/devolo-home-control/dhc-php-api/phpDevoloAPI.php");
 	require($_SERVER['DOCUMENT_ROOT']."/root/home-automation/devolo-home-control/dhc-php-api/localphpdevoloAPI.php");
 
 	// Configuration to access Devolo Bridge (DHC)
 	// Change the values according to your environment.
-    $login 		= "<ENTER YOUR YOUR LOGIN E-MAIL ADDRESS>";
-    $password 	= "<ENTER YOUR YOUR LOGIN PASSWORD>";
-    $localIP 	= "<ENTER YOUR YOUR DHC LOCAL IP ADDRESS>";
-    $uuid 		= "<ENTER YOUR DHC UUID STRING>";
-    $gateway 	= "<ENTER YOUR DHC GATEWAY ID>";
-    $passkey 	= "<ENTER YOUR DHC PASSKEY>";
+        $login 		= "<ENTER YOUR YOUR LOGIN E-MAIL ADDRESS>";
+        $password 	= "<ENTER YOUR YOUR LOGIN PASSWORD>";
+        $localIP 	= "<ENTER YOUR YOUR DHC LOCAL IP ADDRESS>";
+        $uuid 		= "<ENTER YOUR DHC UUID STRING>";
+        $gateway 	= "<ENTER YOUR DHC GATEWAY ID>";
+        $passkey 	= "<ENTER YOUR DHC PASSKEY>";
 
 	// Welcome message
 	echo "Starting CLI better control Qubino 2 Flush relays with the DHC php API ...\n";
@@ -121,7 +121,7 @@
 			break;
 	}
 
-// Everthing looks fine so we use standard exit
-echo "Requested DHC scene has been successfully started\n";
-exit(0);
+	// Everthing looks fine so we use standard exit
+	echo "Requested DHC scene has been successfully started\n";
+	exit(0);
 ?>
