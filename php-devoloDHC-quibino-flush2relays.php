@@ -16,8 +16,8 @@
 
         // Include Devolo API php class from KiboOst
 	// Configure the path to the location where you have stored the DHC php API
-	require($_SERVER['DOCUMENT_ROOT']."/root/home-automation/devolo-home-control/dhc-php-api/phpDevoloAPI.php");
-	require($_SERVER['DOCUMENT_ROOT']."/root/home-automation/devolo-home-control/dhc-php-api/localphpdevoloAPI.php");
+	require($_SERVER['DOCUMENT_ROOT']."/dhc-php-api/phpDevoloAPI.php");
+	require($_SERVER['DOCUMENT_ROOT']."/dhc-php-api/localphpdevoloAPI.php");
 
 	// Configuration to access Devolo Bridge (DHC)
 	// Change the values according to your environment.
