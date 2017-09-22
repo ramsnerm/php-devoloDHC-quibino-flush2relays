@@ -2,7 +2,7 @@
 
 # php-devoloDHC-quibino-2flush
 
-This is a php script to control the Qubino Flush 2 Relay ZMNHBDx using the php API [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) for Devolo Home Control from [KiboOst](https://github.com/KiboOst).
+This CLI is a php script to control the Qubino Flush 2 Relay ZMNHBDx using the php API [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) for Devolo Home Control from [KiboOst](https://github.com/KiboOst).
 
 ## What is it about?
 
@@ -105,4 +105,4 @@ SOFTWARE.
 
 Thanks
 
-Thanks to @tattn (https://github.com/tattn/homebridge-rm-mini3), @PJCzx (https://github.com/PJCzx/homebridge-thermostat) @momodalo (https://github.com/momodalo/broadlinkjs) whose time and effort got me started.
+Thanks to ... whose time and effort got me started.
