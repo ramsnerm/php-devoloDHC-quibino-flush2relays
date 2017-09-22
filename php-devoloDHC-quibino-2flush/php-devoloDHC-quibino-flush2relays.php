@@ -1,20 +1,20 @@
 #!/usr/bin/php
 <?php
-	// NAME: 	php-devoloDHC-quibino-flush2relays.php 
-	// VERSION:	0.1
+	// NAME: 	php-devoloDHC-quibino-flush2relays.php
+	// VERSION:	v0.1 (2017-09-22)
 	//
 	// Copyright (c) 2017 ramsnerm
-        //
+  //
 	// DESCRIPTION
 	//   A simple php script to operate the Qubino Flush 2 relays per contact and therfore to enable an implementation
  	//   in other scripts and/or home automation systems like ha-bridge (hue bridge emulator) or homebridge (homekit bridge).
 	//
 	// REQUIREMENTS
-	//   - php API for Devolo Home Control (https://github.com/KiboOst/php-devoloDHC) 
+	//   - php API for Devolo Home Control (https://github.com/KiboOst/php-devoloDHC)
 	//   - PHP v5+
 	//   - The script require internet access (it will authenticate against Devolo servers) if it fails local.
 
-        // Include Devolo API php class from KiboOst
+  // Include Devolo API php class from KiboOst
 	// Configure the path to the location where you have stored the DHC php API
 	require($_SERVER['DOCUMENT_ROOT']."/dhc-php-api/phpDevoloAPI.php");
 	require($_SERVER['DOCUMENT_ROOT']."/dhc-php-api/localphpdevoloAPI.php");
@@ -22,7 +22,7 @@
 	// Configuration to access Devolo Bridge (DHC)
 	// Change the values according to your environment.
         $login 		= "<ENTER YOUR YOUR LOGIN E-MAIL ADDRESS>";
-        $password 	= "<ENTER YOUR YOUR LOGIN PASSWORD>";
+        $password = "<ENTER YOUR YOUR LOGIN PASSWORD>";
         $localIP 	= "<ENTER YOUR YOUR DHC LOCAL IP ADDRESS>";
         $uuid 		= "<ENTER YOUR DHC UUID STRING>";
         $gateway 	= "<ENTER YOUR DHC GATEWAY ID>";
@@ -30,7 +30,7 @@
 
 	// Welcome message
 	echo "Starting CLI better control Qubino 2 Flush relays with the DHC php API ...\n";
-	echo "\n"; 
+	echo "\n";
 
 	// Check command line arguemnts ...
 	if ( $argc == 4 && ( $argv[3] == "on" || $argv[3] == "off" ) && $argv[1] >= 0 && $argv[1] <= 2 ) {
@@ -68,6 +68,9 @@
 		echo "    This will switch on the relay contact number 1 of the DHC Living Room device.\n";
 		echo "    The CLI will call the DHC scene \"living room #1 on\"\n";
 		echo "\n";
+		echo "Version:\n";
+		echo "    v0.1 (2017-09-22)";
+		echo "\n";
 		exit(-1);
 	}
 
@@ -90,13 +93,13 @@
 	}
 
 	// Now we store the relay contact states
-	$relay_contact_state[1] = $device_data["result"][0]["state"]; 
+	$relay_contact_state[1] = $device_data["result"][0]["state"];
 	$relay_contact_state[2] = $device_data["result"][2]["state"];
 
 	// Define the requries scene definition from current states and request by CLI
 	$required_status =  ($command == "on") ? "1" : "0";
 
-	if	( $contact == "0" ) $required_status = "{$required_status}{$required_status}"; 
+	if	( $contact == "0" ) $required_status = "{$required_status}{$required_status}";
 	elseif 	( $contact == "1" ) $required_status = "{$required_status}{$relay_contact_state[2]}";
 	else 			    $required_status = "{$relay_contact_state[1]}{$required_status}";
 
