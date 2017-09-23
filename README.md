@@ -1,3 +1,13 @@
+
+---
+
+# DEPRECATED since 2017-09-23
+
+The [php-devoloDHC](https://github.com/KiboOst/php-devoloDHC) API from [KiboOst](https://github.com/KiboOst) supports since version [v2.80](https://github.com/KiboOst/php-devoloDHC/tree/192dab648555c1506696ac8c5a3d4eb0bc1141ba) natively the control of the individual contacts of a Qubino Flush 2 relay.
+
+---
+
+
 <img align="right" src="/README-Assets/qubino_control.jpg" width="150">
 
 # php-devoloDHC-quibino-2flush
